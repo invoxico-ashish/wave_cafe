@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 
 function IcedCoffee({ coffee }) {
-    console.log(coffee, "fdfadfasdfaf");
 
     return (
         <>

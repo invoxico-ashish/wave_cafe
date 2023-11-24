@@ -244,6 +244,16 @@ h2 {
 
 .tm-page-content {
     animation: fadeEffect 1s;
+
+}
+
+.details_box {
+    width: 50%;
+    margin-right: 20px;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .tm-text-primary {
@@ -291,7 +301,10 @@ h2 {
 .tm-special-items {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px -10px 0;
+    margin-top: 50px;
+
+    /* margin: -30px -10px 0; */
+    width: 50%;
 }
 
 .tm-special-item {

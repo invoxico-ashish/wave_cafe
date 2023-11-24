@@ -44,10 +44,16 @@ db.Sequelize = Sequelize;
 
 db.icedCoffee = require("./tbl_iced_coffee")(sequelize, DataTypes);
 db.attachment = require("./tbl_attchments")(sequelize, DataTypes);
+db.about = require("./tbl_about")(sequelize, DataTypes);
+db.spItems = require("./tbl_special_items")(sequelize, DataTypes);
 
 
 db.icedCoffee.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attachments" });
 db.attachment.belongsTo(db.icedCoffee, { foreignKey: "attachment_record_id", as: "attachments" });
+db.about.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attachmentAbout" });
+db.attachment.belongsTo(db.about, { foreignKey: "attachment_record_id", as: "attachmentAbout" });
+db.spItems.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attachmentspecial" });
+db.attachment.belongsTo(db.spItems, { foreignKey: "attachment_record_id", as: "attachmentspecial" });
 
 
 

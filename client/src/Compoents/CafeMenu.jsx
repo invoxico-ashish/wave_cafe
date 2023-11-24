@@ -37,7 +37,6 @@ function CafeMenu() {
     useEffect(() => {
         coffeeDetails();
     }, [setIcedCoff])
-
     return (
         <>
 
@@ -56,14 +55,14 @@ function CafeMenu() {
                                 <li>
                                     <Nav.Link
                                         onClick={hotCoffeeClick}
-                                        classNameName="tm-tab-link active"
+                                        className="tm-tab-link active"
                                     >
                                         Hot Coffee</Nav.Link>
                                 </li>
                                 <li>
                                     <Nav.Link
                                         onClick={fruitClick}
-                                        classNameName="tm-tab-link active"
+                                        className="tm-tab-link active"
                                     >
                                         Fruit Juice</Nav.Link>
                                 </li>
@@ -75,7 +74,6 @@ function CafeMenu() {
                 </main >
             </div >
         </>
-
     )
 }
 

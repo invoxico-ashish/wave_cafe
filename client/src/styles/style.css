@@ -39,3 +39,21 @@
     position: relative;
     z-index: 0;
 }
+
+#special {
+    border: 1px soldi black;
+}
+
+.background-video {
+    height: 89rem !important;
+}
+
+.main_contact {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin-right: 20px;
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
