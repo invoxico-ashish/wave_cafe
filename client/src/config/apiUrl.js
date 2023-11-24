@@ -1,0 +1,1 @@
+export const icedCoffee = "http://localhost:8000/coffee/ice/list";

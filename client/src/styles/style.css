@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.background-video {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    position: absolute;
+}
+
+.left {
+    border: 1px soldi rgb(230, 21, 21);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.homeContent {
+    display: flex;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.top {
+    position: relative;
+    z-index: 0;
+}
