@@ -1,7 +1,6 @@
 import React from 'react'
 
 function SpecialItems({ SpData }) {
-    console.log(SpData, "SpData")
     return (
         <>
             <div className="tm-special-items">
@@ -15,7 +14,7 @@ function SpecialItems({ SpData }) {
                             </div>
                         </div>
                     ))
-                }
+                };
             </div>
         </>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import waveCafe from "../assets/wave-cafe-video-bg.mp4";
+import waveCafe from "../../assets/wave-cafe-video-bg.mp4";
 
 function Background() {
     return (

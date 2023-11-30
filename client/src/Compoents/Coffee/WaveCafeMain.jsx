@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import "../styles/style.css"
+import "../../styles/style.css"
 import CafeMenu from './CafeMenu';
 import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from './About';
-import SpecailItems from "./Coffee/SpecialItems";
+import SpecailItems from "./SpecialItems";
 import Contact from "./Contact"
 import axios from 'axios';
-import { apiAbout, apiSpItems } from "../config/apiUrl"
+import { apiAbout, apiSpItems } from "../../config/apiUrl"
 
 function WaveCafeMain() {
     const [activeTab, setActiveTab] = useState("drinkMenu");
@@ -69,15 +69,10 @@ function WaveCafeMain() {
                     </Nav>
                 </div>
             </div>
-
-
             {activeTab === "drinkMenu" ? <CafeMenu /> : null}
             {activeTab === "about" ? <About apiData={apiData} /> : null}
             {activeTab === "special" ? <SpecailItems SpData={SpData} /> : null}
             {activeTab === "contact" ? <Contact /> : null}
-
-
-
         </>
     )
 }

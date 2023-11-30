@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import IcedCoffee from "./Coffee/IcedCoffee";
+import IcedCoffee from "./IcedCoffee";
 import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { icedCoffee } from "../config/apiUrl"
+import { icedCoffee } from "../../config/apiUrl"
 import axios from "axios"
-import { hotCoffeeFun, fruitJuiceFun } from "../Global/listingFunctions"
+import { hotCoffeeFun, fruitJuiceFun } from "../../Global/listingFunctions"
 
 
 

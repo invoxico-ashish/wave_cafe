@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { icedCoffee } from "../config/apiUrl";
-import CafeMenu from '../Compoents/CafeMenu';
+import CafeMenu from '../Compoents/Coffee/CafeMenu';
 import axios from "axios"
 
 const coffeeContext = createContext();
