@@ -1,21 +1,27 @@
 import React from 'react';
-import HomeHirevac from './HomeHirevac';
-import { Routes, Route } from "react-router-dom";
+import FooterHirevac from './FooterHirevac';
+import ExpertsHirevac from './ExpertsHirevac';
+import FeaturedJob from './FeaturedJob';
+import CategorySecHirevac from './CategorySecHirevac';
+import SliderSecHirevac from './SliderSecHirevac';
+import HirevacAbout from './HirevacAbout';
 import "../../styles/Hirevaccss/bootstrap.css"
 import "../../styles/Hirevaccss/font-awesome.min.css";
-// import "../../styles/Hirevaccss/style.css";
-// import "../../styles/Hirevaccss/styles"
 
 
 function HirevacHome() {
     return (
         <>
-            <Routes>
-                <Route path="/" element={<HomeHirevac />} />
-            </Routes>
+            <div className='hero_area'>
+                <SliderSecHirevac />
+            </div>
+            <CategorySecHirevac />
+            <HirevacAbout />
+            <FeaturedJob />
+            <ExpertsHirevac />
+            <FooterHirevac />
         </>
-        // <div>HirevacHome</div>
-    )
-}
+    );
+};
 
 export default HirevacHome

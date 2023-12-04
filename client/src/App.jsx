@@ -9,6 +9,10 @@ import About from "./Compoents/Coffee/About";
 import SpecialItems from "./Compoents/Coffee/SpecialItems"
 import Contact from "./Compoents/Coffee/Contact"
 import HirevacHome from "./Compoents/Hirevac/HirevacHome";
+import HirevacAbout from "./Compoents/Hirevac/HirevacAbout";
+import HeaderHirevac from "./Compoents/Hirevac/HeaderHirevac";
+import FeaturedJob from "./Compoents/Hirevac/FeaturedJob";
+import ExpertsHirevac from "./Compoents/Hirevac/ExpertsHirevac";
 
 function App() {
   return (
@@ -20,7 +24,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/special" element={<SpecialItems />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/hirevac" element={<HirevacHome />} />
+          <Route element={<HeaderHirevac />}>
+            <Route path="/hirevac" element={<HirevacHome />} />
+            <Route path="/hirevac/about" element={<HirevacAbout />} />
+            <Route path="/hirevac/jobs" element={<FeaturedJob />} />
+            <Route path="/hirevac/freelacer" element={<ExpertsHirevac />} />
+          </Route>
+          {/* </HeaderHirevac> */}
         </Routes >
       </CoffeeContextTwo>
     </>

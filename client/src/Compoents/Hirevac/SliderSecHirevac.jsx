@@ -3,11 +3,11 @@ import React from 'react'
 function SliderSecHirevac() {
     return (
         <>
-            <section class="slider_section ">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-8 mx-auto">
-                            <div class="detail-box">
+            <section className="slider_section ">
+                <div className="container ">
+                    <div className="row">
+                        <div className="col-lg-7 col-md-8 mx-auto">
+                            <div className="detail-box">
                                 <h1>
                                     Build Your <br />
                                     POWERFUL CAREER
@@ -19,24 +19,24 @@ function SliderSecHirevac() {
                             </div>
                         </div>
                     </div>
-                    <div class="find_container ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                    <div className="find_container ">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col">
                                     <form>
-                                        <div class="form-row ">
-                                            <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" id="inputPatientName" placeholder="Keywords" />
+                                        <div className="form-row ">
+                                            <div className="form-group col-lg-3">
+                                                <input type="text" className="form-control" id="inputPatientName" placeholder="Keywords" />
                                             </div>
-                                            <div class="form-group col-lg-3">
-                                                <select name="" class="form-control wide" id="inputDoctorName">
+                                            <div className="form-group col-lg-3">
+                                                <select name="" className="form-control wide" id="inputDoctorName">
                                                     <option value="Normal distribution ">All Locations</option>
                                                     <option value="Normal distribution ">Location 2 </option>
                                                     <option value="Normal distribution ">Location 3 </option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-lg-3">
-                                                <select name="" class="form-control wide" id="inputDepartmentName">
+                                            <div className="form-group col-lg-3">
+                                                <select name="" className="form-control wide" id="inputDepartmentName">
                                                     <option value="Normal distribution ">SEO Expert </option>
                                                     <option value="Normal distribution ">Web Designer </option>
                                                     <option value="Normal distribution ">Web Developer</option>
@@ -44,31 +44,31 @@ function SliderSecHirevac() {
                                                     <option value="Normal distribution ">Content Writer</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-lg-3">
-                                                <div class="btn-box">
-                                                    <button type="submit" class="btn ">Submit Now</button>
+                                            <div className="form-group col-lg-3">
+                                                <div className="btn-box">
+                                                    <button type="submit" className="btn ">Submit Now</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <ul class="job_check_list">
-                                <li class=" ">
-                                    <input id="checkbox_qu_01" type="checkbox" class="styled-checkbox" />
-                                    <label for="checkbox_qu_01">
+                            <ul className="job_check_list">
+                                <li className=" ">
+                                    <input id="checkbox_qu_01" type="checkbox" className="styled-checkbox" />
+                                    <label htmlFor="checkbox_qu_01">
                                         Freelancer
                                     </label>
                                 </li>
-                                <li class=" ">
-                                    <input id="checkbox_qu_02" type="checkbox" class="styled-checkbox" />
-                                    <label for="checkbox_qu_02">
+                                <li className=" ">
+                                    <input id="checkbox_qu_02" type="checkbox" className="styled-checkbox" />
+                                    <label htmlFor="checkbox_qu_02">
                                         Part Time
                                     </label>
                                 </li>
-                                <li class=" ">
-                                    <input id="checkbox_qu_03" type="checkbox" class="styled-checkbox" />
-                                    <label for="checkbox_qu_03">
+                                <li className=" ">
+                                    <input id="checkbox_qu_03" type="checkbox" className="styled-checkbox" />
+                                    <label htmlFor="checkbox_qu_03">
                                         Full Time
                                     </label>
                                 </li>

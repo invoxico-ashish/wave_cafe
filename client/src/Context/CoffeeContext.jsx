@@ -22,10 +22,6 @@ export function CoffeeContextTwo({ children }) {
             console.error('Error fetching coffee details:', error);
         }
     };
-    // useEffect(() => {
-    //     coffeeDetails()
-    //     // console.log(coffeeData)
-    // }, [])
     return (
         <coffeeContext.Provider value={{ coffeeDetails }}>
             {children}

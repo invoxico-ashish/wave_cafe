@@ -46,6 +46,8 @@ db.icedCoffee = require("./tbl_iced_coffee")(sequelize, DataTypes);
 db.attachment = require("./tbl_attchments")(sequelize, DataTypes);
 db.about = require("./tbl_about")(sequelize, DataTypes);
 db.spItems = require("./tbl_special_items")(sequelize, DataTypes);
+db.hirevacAbout = require("./tbl_hirevac_about")(sequelize, DataTypes);
+db.hirevacJob = require("./tbl_hirevac_recents_jobs")(sequelize, DataTypes);
 
 
 db.icedCoffee.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attachments" });
@@ -54,7 +56,10 @@ db.about.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attac
 db.attachment.belongsTo(db.about, { foreignKey: "attachment_record_id", as: "attachmentAbout" });
 db.spItems.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "attachmentspecial" });
 db.attachment.belongsTo(db.spItems, { foreignKey: "attachment_record_id", as: "attachmentspecial" });
-
+db.hirevacAbout.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "hirevacaboutattachments" });
+db.attachment.belongsTo(db.hirevacAbout, { foreignKey: "attachment_record_id", as: "hirevacaboutattachments" });
+db.hirevacJob.hasMany(db.attachment, { foreignKey: "attachment_record_id", as: "hirevacjobattachments" });
+db.attachment.belongsTo(db.hirevacJob, { foreignKey: "attachment_record_id", as: "hirevacjobattachments" });
 
 
 module.exports = db;
